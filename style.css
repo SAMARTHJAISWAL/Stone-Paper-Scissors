@@ -11,7 +11,14 @@
     line-height: 5rem;
   }
   
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+
   .choice {
+    padding: 0;
+    border: none;
+    background: none;
     height: 165px;
     width: 165px;
     border-radius: 50%;
@@ -20,9 +27,16 @@
     align-items: center;
   }
   
-  .choice:hover {
+  .choice:hover,
+  .choice:focus-visible {
     cursor: pointer;
     background-color: #081b31;
+  }
+
+  .choice:focus-visible,
+  #reset-btn:focus-visible {
+    outline: 3px solid #ffb703;
+    outline-offset: 3px;
   }
   
   img {
@@ -65,4 +79,55 @@
     display: inline;
     padding: 1rem;
     border-radius: 1rem;
+  }
+
+  #reset-btn {
+    margin: 3rem 0;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #081b31;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    .choices {
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+
+    .choice {
+      height: 100px;
+      width: 100px;
+    }
+
+    img {
+      height: 90px;
+      width: 90px;
+    }
+
+    .score-board {
+      font-size: 1.25rem;
+      gap: 3rem;
+    }
+
+    #user-score,
+    #comp-score {
+      font-size: 2.5rem;
+    }
+
+    .msg-container {
+      margin: 2.5rem 1rem 0;
+    }
+
+    #msg {
+      font-size: 1.25rem;
+      display: inline-block;
+    }
   }
