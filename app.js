@@ -55,6 +55,19 @@ const playGame = (userChoice) => {
   }
 };
 
+const resetBtn = document.querySelector("#reset-btn");
+
+const resetGame = () => {
+  userScore = 0;
+  compScore = 0;
+  userScorePara.innerText = userScore;
+  compScorePara.innerText = compScore;
+  msg.innerText = "Play your move";
+  msg.style.backgroundColor = "#081b31";
+};
+
+resetBtn.addEventListener("click", resetGame);
+
 choices.forEach((choice) => {
   choice.addEventListener("click", () => {
     const userChoice = choice.getAttribute("id");
