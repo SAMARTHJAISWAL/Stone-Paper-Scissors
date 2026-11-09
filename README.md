@@ -42,3 +42,9 @@ Stone-Paper-Scissors/
 ## Tech stack
 
 HTML5, CSS3, vanilla JavaScript (ES6).
+
+## Licence
+
+[MIT](LICENSE) © 2024–2026 Samarth Jaiswal
+
+The MIT licence covers the source code. Images, video and other media in this repository are not covered.
