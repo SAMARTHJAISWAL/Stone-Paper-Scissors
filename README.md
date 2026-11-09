@@ -1,7 +1,13 @@
 # Stone Paper Scissors
 
+[![Play it](https://img.shields.io/badge/play%20it-samarthjaiswal.github.io%2FStone--Paper--Scissors-081b31?style=flat-square)](https://samarthjaiswal.github.io/Stone-Paper-Scissors/)
+
 A small browser game of Rock, Paper, Scissors against the computer, written in plain HTML, CSS and
 JavaScript with no dependencies or build step.
+
+**[Play it →](https://samarthjaiswal.github.io/Stone-Paper-Scissors/)**
+
+![The game after a round: the three choices, a score of 1 to 1, and the message "You lost. scissors beats your paper"](og.png)
 
 ## Features
 
@@ -21,7 +27,7 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
-Because it is a static site, it could also be hosted with GitHub Pages (not currently enabled).
+It is also live on GitHub Pages, served straight from the `main` branch.
 
 ## Project structure
 
